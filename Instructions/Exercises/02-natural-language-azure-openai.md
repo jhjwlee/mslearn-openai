@@ -87,9 +87,11 @@ Applications for both C# and Python have been provided. Both apps feature the sa
     **Python**:
 
     ```
-    pip install openai==1.13.3
+    pip uninstall httpx httpcore anyio
+    pip install httpx==0.24.1
+    pip install openai==1.2.0
     ```
-
+    (pip install openai==1.13.3)  
 3. In the **Explorer** pane, in the **CSharp** or **Python** folder, open the configuration file for your preferred language
 
     - **C#**: appsettings.json
